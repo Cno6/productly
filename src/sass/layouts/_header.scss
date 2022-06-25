@@ -1,0 +1,39 @@
+.header {
+  background-color: $color-white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 15px 0 17px;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+}
+.header__navigation {
+}
+.navigation {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 1.87;
+}
+.navigation__item {
+  list-style: none;
+  cursor: pointer;
+  &:not(:last-child) {
+    padding-right: 20px;
+  }
+  & a {
+    text-decoration: none;
+    color: $color-navigation-links;
+    transition: color 0.3s ease;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+.header__buttons {
+  & > :not(:last-child) {
+    margin-right: 14px;
+  }
+}
