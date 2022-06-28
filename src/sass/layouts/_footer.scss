@@ -1,0 +1,24 @@
+.footer {
+  padding: 56px 0px 52px;
+}
+.footer-navigation__column {
+}
+.footer__titles {
+  margin: 0 0 15px;
+}
+.footer-navigation__links {
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+.footer-navigation__link {
+  @include font($height: 2.19);
+  @extend %font-additional;
+  color: $color-text;
+  text-decoration: none;
+  transition: color .3s ease;
+  &:hover {
+    color: $color-primary;
+  }
+}

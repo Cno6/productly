@@ -2,7 +2,7 @@
   font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.link-button, h1 {
+.link-button, .footer-navigation__link, h1 {
   font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -798,6 +798,34 @@ h5 {
   height: 160px;
 }
 
+.footer {
+  padding: 56px 0px 52px;
+}
+
+.footer__titles {
+  margin: 0 0 15px;
+}
+
+.footer-navigation__links {
+  padding: 0;
+}
+.footer-navigation__links li {
+  list-style: none;
+}
+
+.footer-navigation__link {
+  font-size: 1.6rem;
+  line-height: 2.19;
+  font-weight: 400;
+  font-style: normal;
+  color: #544837;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-navigation__link:hover {
+  color: #FF9900;
+}
+
 .button {
   padding: 11px 25px 13px;
   font-style: normal;
@@ -864,6 +892,10 @@ h5 {
 .logo {
   display: flex;
   align-items: center;
+}
+
+.footer_logo {
+  align-items: flex-start;
 }
 
 .tool__title {
