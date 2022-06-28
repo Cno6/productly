@@ -1,0 +1,15 @@
+.strategies {
+  padding: 30px 0 66px;
+}
+.strategies__title {
+  margin: 0 0 14px;
+}
+.strategies__description {
+  margin: 0 0 24px;
+}
+.strategies__tags {
+  margin: 0 0 31px;
+  & > *:not(:last-child) {
+    margin-right: 7px;
+  }
+}

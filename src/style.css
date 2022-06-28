@@ -509,6 +509,11 @@ h5 {
   color: #544837;
 }
 
+.block-shadowed {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
 .wrapper {
   max-width: 1197px;
   margin: auto;
@@ -702,6 +707,25 @@ h5 {
   text-align: center;
 }
 
+.strategies {
+  padding: 30px 0 66px;
+}
+
+.strategies__title {
+  margin: 0 0 14px;
+}
+
+.strategies__description {
+  margin: 0 0 24px;
+}
+
+.strategies__tags {
+  margin: 0 0 31px;
+}
+.strategies__tags > *:not(:last-child) {
+  margin-right: 7px;
+}
+
 .button {
   padding: 11px 25px 13px;
   font-style: normal;
@@ -772,6 +796,51 @@ h5 {
 
 .tool__description {
   margin: 0;
+}
+
+.tag {
+  font-size: 1.3rem;
+  line-height: 2.15;
+  font-weight: 400;
+  font-style: normal;
+  padding: 7px 14px 8px;
+  border-radius: 90px;
+}
+
+.tag_selected {
+  background: #FF9900;
+  border: 1px solid #FF9900;
+  color: #FFFFFF;
+}
+
+.tag_bordered {
+  background: #FFFFFF;
+  border: 1px solid #D7D7D7;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.tag_bordered:hover {
+  background: #D7D7D7;
+}
+
+.tag_colored {
+  background: #F5F5F5;
+}
+
+.strategy-wrapper > * {
+  margin-bottom: 30px;
+}
+
+.stategy__content {
+  padding: 24px 33px 26px;
+}
+
+.stategy__title {
+  margin: 0 0 29px;
+}
+
+.strategy__tags > *:not(:last-child) {
+  margin-right: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */
