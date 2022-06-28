@@ -1,0 +1,22 @@
+.tools {
+  display: flex;
+  justify-content: center;
+}
+.tools__wrapper {
+  padding: 0 0 90px;
+  background-image: url("./img/backgrounds/tools-bg.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.tools__items {
+  margin-bottom: 60px;
+}
+.tools__title {
+  max-width: 462px;
+  text-align: center;
+  margin: 0 auto 70px;
+}
+.tools__button {
+  text-align: center;
+}

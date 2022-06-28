@@ -8,9 +8,12 @@
 @import "./base/wrapper";
 @import "./base/icons";
 
-@import "./components/buttons";
-@import "./components/logo";
-
+@import "./layouts/columns";
 @import "./layouts/header";
 @import "./layouts/contact";
 @import "./layouts/promo";
+@import "./layouts/tools";
+
+@import "./components/buttons";
+@import "./components/logo";
+@import "./components/tool";

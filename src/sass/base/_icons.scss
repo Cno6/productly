@@ -7,4 +7,52 @@
   width: 18px;
   height: 19px;
   background-image: url("./img/icons/icon_play.svg");
+  
+}
+
+.icon_arrow {
+  width: 12px;
+  height: 17px;
+  background-image: url("./img/icons/icon_click.svg");
+}
+
+.icon_survey {
+  width: 18px;
+  height: 14px;
+  background-image: url("./img/icons/icon_surveys.svg");
+}
+
+.icon_preference {
+  width: 19px;
+  height: 18px;
+  background-image: url("./img/icons/icon_preference-tests.svg");
+}
+
+.icon_time {
+  width: 15px;
+  height: 17px;
+  background-image: url("./img/icons/icon_time-tests.svg");
+}
+
+.icon-square {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-square_violet {
+  background-color: $color-violet;
+}
+.icon-square_yellow {
+  background-color: $color-yellow;
+}
+.icon-square_red {
+  background-color: $color-red;
+}
+.icon-square_light-blue {
+  background-color: $color-light-blue;
 }
