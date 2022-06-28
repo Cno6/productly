@@ -30,6 +30,9 @@
     border: 1px solid $color-additional;
   }
 }
+.button_wide {
+  padding: 15px 39px 16px;
+}
 
 .link-button {
   @extend %font-additional;

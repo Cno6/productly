@@ -1,0 +1,27 @@
+.employee {
+  display: flex;
+  align-items: center;
+  * > {
+    align-self: stretch;
+  }
+}
+.employee__content {
+  max-width: 222px;
+  // padding: 35px 88px 35px 35px;
+  padding: 35px 0 35px 35px;
+  > * {
+    margin: 0;
+  }
+}
+.employee__name {
+}
+.employee__role {
+  @include font($size: 1.4rem, $height: 1);
+}
+.employee__email {
+  @include font($size: 1.4rem, $height: 1);
+  text-decoration: none;
+}
+.employee__image {
+
+}
