@@ -8,6 +8,14 @@
 @import "./base/wrapper";
 @import "./base/icons";
 
+@import "./components/buttons";
+@import "./components/logo";
+@import "./components/tool";
+@import "./components/tags";
+@import "./components/strategy";
+@import "./components/employee";
+@import "./components/contacts";
+
 @import "./layouts/columns";
 @import "./layouts/header";
 @import "./layouts/promo";
@@ -16,11 +24,3 @@
 @import "./layouts/about";
 @import "./layouts/contact";
 @import "./layouts/footer";
-
-@import "./components/buttons";
-@import "./components/logo";
-@import "./components/tool";
-@import "./components/tags";
-@import "./components/strategy";
-@import "./components/employee";
-@import "./components/contacts";
