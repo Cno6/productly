@@ -1,3 +1,5 @@
+$image-gap: 32px;
+
 .employee {
   position: relative;
   display: flex;
@@ -6,9 +8,11 @@
     align-self: stretch;
   }
 }
+.employee__wrapper {
+  padding-right: $image-gap;
+}
 .employee__content {
   max-width: 222px;
-  // padding: 35px 88px 35px 35px;
   padding: 35px 0 35px 35px;
   > * {
     margin: 0;
@@ -22,11 +26,15 @@
 .employee__email {
   @include font($size: 1.4rem, $height: 1);
   text-decoration: none;
+  color: $color-links;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 .employee__image {
   position: absolute;
   height: 98px;
-  left: calc(100% - 66px);
+  left: calc(100% - (98px - $image-gap));
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
   border-radius: 50px;
 }

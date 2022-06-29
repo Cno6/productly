@@ -13,3 +13,19 @@
     flex-basis: $width;
   };
 }
+
+@mixin media-laptop {
+  @media (max-width: $width-content) { @content; }
+}
+
+@mixin media-tablet {
+  @media (max-width: $width-tablet) { @content; }
+}
+
+@mixin media-mobile-big {
+  @media (max-width: $width-mobile-big) { @content; }
+}
+
+@mixin media-mobile-small {
+  @media (max-width: $width-mobile-small) { @content; }
+}

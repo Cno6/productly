@@ -737,6 +737,10 @@ h5 {
   align-self: stretch;
 }
 
+.employee__wrapper {
+  padding-right: 32px;
+}
+
 .employee__content {
   max-width: 222px;
   padding: 35px 0 35px 35px;
@@ -758,6 +762,10 @@ h5 {
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
+  color: #1943EF;
+}
+.employee__email:hover {
+  text-decoration: underline;
 }
 
 .employee__image {
