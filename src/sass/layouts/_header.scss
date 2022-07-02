@@ -7,31 +7,39 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include media-tablet {
+    padding-left: 24px;
+  }
 }
 .header__navigation {
-}
-.navigation {
-  display: flex;
-  font-size: 1.5rem;
-  line-height: 1.87;
-}
-.navigation__item {
-  list-style: none;
-  cursor: pointer;
-  &:not(:last-child) {
-    padding-right: 20px;
-  }
-  & a {
-    text-decoration: none;
-    color: $color-navigation-links;
-    transition: color 0.3s ease;
-    &:hover {
-      color: $color-primary;
-    }
+  @include media-tablet {
+    display: none;
   }
 }
 .header__buttons {
+  & > * {
+    padding: 11px 25px 13px;
+    width: auto;
+  }
   & > :not(:last-child) {
     margin-right: 14px;
+  }
+  @include media-mobile-big {
+    display: none;
+  }
+}
+.header__logo-line {
+  display: flex;
+  align-items: center;
+  column-gap: 37px;
+  @include media-mobile-big {
+    column-gap: 61px;
+  }
+}
+.header__logo {
+  @include media-mobile-big {
+    img {
+      width: 129px;
+    }
   }
 }

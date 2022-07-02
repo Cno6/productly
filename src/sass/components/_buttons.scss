@@ -1,5 +1,6 @@
 .button {
   padding: 11px 25px 13px;
+  width: 171px;
   @extend %font-primary;
   font-style: normal;
   font-weight: 600;
@@ -10,6 +11,9 @@
   border: none;
   cursor: pointer;
   transition: background 0.3s ease, border 0.3s ease;
+  @include media-tablet {
+    padding: 15px 0 16px 0;
+  }
 }
 .button_bordered {
   background-color: rgba($color: $color-white, $alpha: 0);
@@ -41,11 +45,15 @@
   color: $color-primary;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   vertical-align: middle;
   height: 53px;
   transition: color .3s ease;
   &:hover {
     color: $color-additional;
+  }
+  @include media-mobile-big {
+    width: 171px;
   }
 }
 

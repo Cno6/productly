@@ -12,25 +12,52 @@ body {
   color: $color-text;
 }
 
+img {
+  display: block;
+}
+
+.wrapper {
+  max-width: $width-content;
+  margin: auto;
+  @include media-laptop {
+    padding: 0 47px;
+  }
+  @include media-mobile-big {
+    padding: 0 21px;
+  }
+}
+
 h1 {
   @extend %font-additional;
   @include font(4.4rem, 1.23, 700);
   color: $color-title;
+  @include media-mobile-big {
+    @include font(3.2rem, 1.31, 700);
+  }
 }
 
 h2 {
   @include font(3.4rem, 1.35, 700);
   color: $color-title;
+  @include media-mobile-big {
+    @include font(2.4rem, 1.375, 700);
+  }
 }
 
 h3 {
   @include font(2.4rem, 1.42, 700);
   color: $color-title;
+  @include media-mobile-big {
+    @include font(2.1rem, 1.48, 700);
+  }
 }
 
 h4 {
   @include font(2.2rem, 1.36, 600);
   color: $color-title;
+  @include media-mobile-big {
+    @include font(2rem, 1.35, 700);
+  }
 }
 
 h5 {

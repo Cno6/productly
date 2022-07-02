@@ -1,0 +1,49 @@
+.navigation {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 1.87;
+  padding: 0;
+}
+.navigation__item {
+  list-style: none;
+  cursor: pointer;
+  &:not(:last-child) {
+    padding-right: 20px;
+  }
+  & a {
+    text-decoration: none;
+    color: $color-navigation-links;
+    transition: color 0.3s ease;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+// HAMBURGER MENU
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 51;
+  @include media-tablet {
+    display: inline-block;
+  }
+}
+.hamburger__line {
+  display: block;
+  width: 31px;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+  background-color: $color-hamburger;
+  border-radius: 5px;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  @include media-mobile-big {
+    width: 27px;
+    height: 2.61px;
+    &:not(:last-child) {
+      margin-bottom: 7px;
+    }
+  }
+}

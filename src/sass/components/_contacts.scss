@@ -13,6 +13,9 @@
     color: $color-text;
     margin-left: 11px;
   }
+  @include media-tablet {
+    justify-content: center;
+  }
 }
 .contacts-phone {
 }

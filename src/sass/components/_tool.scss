@@ -1,9 +1,22 @@
 .tool {
+  @include media-tablet {
+    text-align: center;
+    flex-basis: 41%;
+  }
+  @include media-mobile-big {
+    flex-basis: 100%;
+  }
 }
 .tool__icon {
 }
 .tool__title {
   margin: 30px 0 16px;
+  @include media-tablet {
+    margin: 20px 0 6px;
+  }
+  @include media-mobile-big {
+    margin: 8px 0 0;
+  }
 }
 .tool__description {
   margin: 0;

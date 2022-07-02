@@ -1,9 +1,13 @@
 .about {
   padding: 0 0 101px;
+  text-align: center;
 }
 .about__title {
   margin: 0 0 14px;
 }
 .about__description {
   margin: 0 0 45px;
+  @include media-tablet {
+    margin-bottom: 37px;
+  }
 }

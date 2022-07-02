@@ -1,15 +1,45 @@
 .contact {
   background-color: $color-background-additional;
   padding: 62px 0 92px;
+  @include media-tablet {
+    padding: 48px 0 50px;
+    text-align: center;
+  }
 }
 .contact__title {
   margin: 0 0 17px;
+  @include media-mobile-big {
+    margin-bottom: 8px;
+  }
+}
+.contact__container {
+  @include media-tablet {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  @include media-mobile-big {
+    width: 333px;
+  }
 }
 .contact__content {
   max-width: 527px;
+  @include media-tablet {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 52px;
+  }
+  @include media-mobile-big {
+    margin-bottom: 41px;
+  }
 }
 .contact__description {
   margin: 0 0 33px;
+  @include media-mobile-big {
+    margin-bottom: 24px;
+  }
 }
 .contact__form {
   input {
@@ -26,15 +56,38 @@
     &:focus {
       outline: 1px solid $color-primary;
     }
+    &::placeholder {
+      color: $color-placeholder;
+    }
   }
   textarea {
     resize: none;
     width: 100%;
     height: 160px;
   }
+  @include media-mobile-big {
+    input {
+      flex-basis: 100%;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+    form > :not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
 }
 .contact__line {
 
 }
 .contact__button {
+  @include media-tablet {
+    margin-top: 7px;
+  }
+  button {
+    width: auto;
+  }
+  @include media-mobile-big {
+    margin-top: 8px;
+  }
 }
